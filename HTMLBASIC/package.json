@@ -1,0 +1,16 @@
+{
+  "name": "htmlbasic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jq_event_groupmethod_01.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build" : "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

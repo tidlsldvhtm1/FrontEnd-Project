@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String 객체</title>
+    <script>
+        var str = 'JavaScript';
+        console.log(str.charAt(0));
+
+        var str = 'JavaScript';
+        console.log(str.indexOf('a'));
+        console.log(str.indexOf('k'));
+
+        var str = 'JavaScript';
+        console.log(str.lastIndexOf('a'));
+
+        var str = 'JavaScript';
+        console.log(str.includes('script'));
+
+        var str = 'http://icoxpublish.com';
+        console.log(str.substring(0, 4));
+        console.log(str.substring(7));
+
+        var str = 'http://icoxpublish.com';
+        console.log(str.substring(7, 4));
+
+        var str = 'JavaScript_jQuery';
+        var division= str.split('_');
+        console.log(division[0] + ', ' + division[1]);
+
+        var str = 'm_out.gif';
+        console.log(str.replace('out', 'over'));
+
+        var str1 = 'nav';
+        var str2 = '_bg';
+        console.log(str1.concat(str2));
+
+        var str = 'removeblank ';
+        console.log(str.trim());
+        var str = 'LowerCase';
+        console.log(str.toLowerCase());
+        var str = 'UpperCase';
+        console.log(str.toUpperCase());
+</script>
+</head>
+<body>
+    
+</body>
+</html>

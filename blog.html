@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 블로그 페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="blog.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-custom flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="main.html">Food Trip</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-black w-100" type="text" placeholder="카테고리, 지역, 조건으로 검색" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-item" href="#">Search</a>
+          </li>    
+        </ul>       
+    </nav>
+
+    <div id="wrap">
+        <section class = "header">
+            <div class="myblog">
+                XXX님의 레스토랑 가이드
+            </div>
+            <ul>
+                <li>즐겨찾기</li>
+                <li>로그인</li>
+                <li>지도</li>
+                <li>팔로우</li>
+            </ul>      
+        </section>
+        <div class="index_image">
+            <div class="profile_image"></div>
+            <button class="btn1" type="button" onclick="javascript:sensorBtnClick('btn1');">DM보내기</button>
+            <button class="btn2" type="button" onclick="javascript:sensorBtnClick('btn2');">팔로우하기</button>
+            <div class="profile">
+                <div class="text">
+                    간단한소개
+                </div>
+                <table class="info">
+                    <tr>
+                        <td>작성한 리뷰</td>
+                    </tr>
+                    <tr>
+                        <td>업로드한 사진</td>
+                    </tr>
+                    <tr>
+                        <td>팔로워 수</td>
+                    </tr>
+                    <tr>
+                        <td>좋아요</td>
+                    </tr>  
+                </table>
+            </div>        
+        </div>
+
+        <div class="wrap2">
+            <div class="main">
+                <h4> XX님의 추천 맛집 </h4>
+                <table class="restaurant" width="100%">
+                    <th class="long" width="70%">1등 맛집</th> <td>맛집 장르</td>
+                    <tr>
+                        <td>맛집 상표</td><td>맛집 별점</td>
+                    </tr>
+                    <th class="long">2등 맛집</th> <td>맛집 장르</td>
+                    <tr>
+                        <td>맛집 상표</td><td>맛집 별점</td>
+                    </tr>
+                    <th class="long">3등 맛집</th> <td>맛집 장르</td>
+                    <tr>
+                        <td>맛집 상표</td><td>맛집 별점</td>
+                    </tr>
+                </table>
+
+                <div class="review_item">
+                    리뷰 영역
+                    <div class="rst_data">
+                        <div class="rst_info"><a href="#">식당 이름</a></div>
+                        <span class="rst_catg">
+                            식당의 카테고리
+                        </span>
+                    </div>
+                    <div class="review_main">
+                        <div class="rst_visit-date">
+                            식당 방문 일자
+                        </div>
+                        <div class="rst_score-data">
+                            식당 별점(스코어)
+                        </div>
+                        <div class="rst_content">
+                            <p class="review_title">리뷰 메인 컨텐츠</p>
+                            <p class="review_comment">리뷰 메인 코멘트</p>
+                            <div class="review_photo">
+                                <ul class="photo_list">
+                                    <li class="photo">
+                                        <div class="review_img"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="review_footer">
+                            <button class="like">
+                                좋아요
+                            </button>
+                            <button class="bookmark">
+                                북마크
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="review_item">
+                    리뷰 영역
+                    <div class="rst_data">
+                        <div class="rst_info"><a href="#">식당 이름</a></div>
+                        <span class="rst_catg">
+                            식당의 카테고리
+                        </span>
+                    </div>
+                    <div class="review_main">
+                        <div class="rst_visit-date">
+                            식당 방문 일자
+                        </div>
+                        <div class="rst_score-data">
+                            식당 별점(스코어)
+                        </div>
+                        <div class="rst_content">
+                            <p class="review_title">리뷰 메인 컨텐츠</p>
+                            <p class="review_comment">리뷰 메인 코멘트</p>
+                            <div class="review_photo">
+                                <ul class="photo_list">
+                                    <li class="photo">
+                                        <div class="review_img"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="review_footer">
+                            <button class="like">
+                                좋아요
+                            </button>
+                            <button class="bookmark">
+                                북마크
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="review_item">
+                    리뷰 영역
+                    <div class="rst_data">
+                        <div class="rst_info"><a href="#">식당 이름</a></div>
+                        <span class="rst_catg">
+                            식당의 카테고리
+                        </span>
+                    </div>
+                    <div class="review_main">
+                        <div class="rst_visit-date">
+                            식당 방문 일자
+                        </div>
+                        <div class="rst_score-data">
+                            식당 별점(스코어)
+                        </div>
+                        <div class="rst_content">
+                            <p class="review_title">리뷰 메인 컨텐츠</p>
+                            <p class="review_comment">리뷰 메인 코멘트</p>
+                            <div class="review_photo">
+                                <ul class="photo_list">
+                                    <li class="photo">
+                                        <div class="review_img"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="review_footer">
+                            <button class="like">
+                                좋아요
+                            </button>
+                            <button class="bookmark">
+                                북마크
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="sidemenu">
+                <h5>방문한 지역</h5>
+                <div class="map">지도</div>
+                <div class="genre">자주가는 장르(10가지)
+                    <ul>
+                        <li>1등</li>
+                        <li>2등</li>
+                        <li>3등</li>
+                        <li>4등</li>
+                        <li>5등</li>
+                        <li>6등</li>
+                        <li>7등</li>
+                        <li>8등</li>
+                        <li>9등</li>
+                        <li>10등</li>
+                    </ul>
+                </div>
+            </div>            
+        </div> 
+                          
+    </div>
+    <footer class="footer">
+        <div class="copyright"><small>© 2021 Food Trip Co., Ltd All rights reserved.</small></div>
+    </footer>               
+</body>
+</html>
